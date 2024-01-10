@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    --fonte-principal:'Inter', sans-serif;
+    }
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size:1rem;
+    font-weight: 400;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.principal {
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    padding: 1em;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 1.5px solid var(--branco-principal);
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+.container__titulo{
+   
+    font-family: var(--fonte-principal);
+    font-weight:700;
+    font-size:28px ;
+}
+.container__caixa{
+    margin : 0 6em;
+}
+
+.container__descricao{
+    padding: 2em;
+    
+}
+
+.container__imagem__combo{
+    margin:1em 0 2em 0;
+}
+
+
+
+.secundario{
+    align-items: center;
+  
+
+}
+.botao__assine{
+    display: inline-block;
+    margin-top: 1em;
+}
+.imagem__tv{
+    width: 80%;
+}
+.descricao__titulo{
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+   
+
+}
+.botao__assine {
+    display: inline-block;
+    margin-top:1em;
+    margin: 1em;
+}
+
+
+.dispositivos{
+    text-align: center;
+    
+    
+}
+.dispositivos__titulos{
+   font-size: 48px;
+    
+    
+}
+
+.dispositivos__listas {
+display: flex;
+justify-content: center;
+gap: 68px;
+ list-style-type: none; /*Tirando o detalhe de ponto da lista */
+ border: 2px solid;
+
+ padding: 2em;
+ margin: 5em 2em;
+}
+
+.rodape{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.logo__alura{
+display: flex;
+
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2em 0;
+    
+}
+.rodape__lista__link{
+    text-decoration: none;
+    text-decoration-style: none;
+    border-style: none;
+    color: var(--branco-principal);
+
+}
+.rodape__lista__link:hover{
+    color: #7353BA;
+    
+}
+.rodape__lista__link:active{
+    color: #659157;
+}
+.rodape__texto{
+    text-align: center;
+    padding: 1em 2em ;
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+}
