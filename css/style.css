@@ -21,7 +21,7 @@ body{
     padding: 0;
 }
 .principal {
-    background-image: url("../img/Background.png");
+    background-image: url("./img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
@@ -163,4 +163,33 @@ display: flex;
     padding: 1em 2em ;
     font-family: var(--fonte-principal);
     font-size: 0.9rem;
+}
+
+@media screen and (max-width:768px){
+    
+    .container{
+        display: block;
+        background: none;
+    }
+    .container__imagem__combo{
+        width: 50vw;
+    }
+    .container__caixa{
+        margin: 2em 2em;
+    }
+    .secundario{
+       margin: 0;
+       text-align: center;
+   
+    }
+    .imagem__tv{
+        
+        width: 50vw;
+    }
+    .dispositivos__listas{
+        display: block;
+    }
+    .rodape__lista{
+        display: block;
+    }
 }
